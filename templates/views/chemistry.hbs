@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Chemistry</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+{{>navbar}}
+<div class="sidenav">
+  <a href="/">Home</a>
+
+  <button class="dropdown-btn"> Physical Chemistry
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Mole Concept and Stochiometry</a>
+    <a href="#">Gaseous State</a>
+    <a href="#">Thermodynamics</a>
+    <a href="#">Chemical Equilibrium</a>
+    <a href="#">Ionic Equilibrium</a>
+    <a href="#">Solid State</a>
+    <a href="#">Solutions</a>
+    <a href="#">Electochemistry</a>
+    <a href="#">Chemical Kinetic</a>
+    <a href="#">Surface Chemistry</a>
+  </div>
+  <button class="dropdown-btn">Thermodynamics 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Waves and Oscillations
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Electrostatics 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Electrodynamics
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Magnetism
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+
+<div class="main">
+  <h1>CHEMISTRY SYLLABUS</h1>
+
+<table>
+    <h2>PHYSICAL CHEMISTRY</h2>
+  <tr>
+    <th>Unit 1 Some Basic Concepts of Chemistry</th>
+  </tr>
+  <tr>
+    <td>Matter and its nature, Dalton’s the atomic theory, the concept of the atom, molecule, element, and compound.
+Physical quantities and their measurements in Chemistry, precision, and accuracy, significant figures, S.I. Units, dimensional analysis.
+Laws of chemical combination.
+Atomic and molecular masses, mole concept, molar mass, percentage composition, empirical and molecular formulae.
+Chemical equations and stoichiometry.</td>
+</tr>
+<tr>
+    <th>Unit 2 States of Matter</th>
+</tr>
+<tr>
+    <td>Classification of matter into solid, liquid and gaseous states.
+Gaseous State: Measurable properties of gases; Gas laws – Boyle’s law, Charles’s law, Graham’s law of diffusion, Avogadro’s law, Dalton’s law of partial pressure.
+The concept of the Absolute scale of temperature; Ideal gas equation, Kinetic theory of gases (only postulates).
+The concept of average, root mean square and most probable velocities.
+Real gases, deviation from Ideal behaviour, compressibility factor, van der Waals equation, liquefaction of gases, critical constants.
+Liquid State: Properties of liquids – vapour pressure, viscosity and surface tension and effect of temperature on them (qualitative treatment only).
+Solid State: Classification of solids-molecular, ionic, covalent and metallic solids, amorphous and crystalline solids (elementary idea).
+Bragg’s Law and its applications.
+Unit cell and lattices, packing in solids (fcc, bcc and hcp lattices), voids, calculations involving unit cell parameters, Imperfection in solids.
+Electrical, magnetic and dielectric properties.</td>
+</tr>
+<tr>
+    <th>Unit 3 Atomic Structure</th>
+</tr>
+<tr>
+    <td>Discovery of subatomic particles (electron, proton, and neutron).
+Thomson and Rutherford atomic models and their limitations.
+Nature of electromagnetic radiation, photoelectric effect.
+The spectrum of the hydrogen atom, Bohr model of hydrogen atom – its postulates, derivation of the relations for the energy of the electron and radii of the different orbits, limitations of Bohr’s model.
+Dual nature of matter, de-Broglie relationship, Heisenberg uncertainty principle.
+Elementary ideas of quantum mechanics, the quantum mechanical model of an atom, its important features, the concept of atomic orbitals as one-electron wave functions.
+Variation of Ψ1 and Ψ2 with r for 1s and 2s orbitals; various quantum numbers (principal, angular momentum, and magnetic quantum numbers), and their significance.
+Shapes of s, p and d – orbitals, electron spin and spin quantum number.
+Rules for filling electrons in orbitals – Aufbau principle, Pauli exclusion principle and Hund’s rule, electronic configuration of elements, the extra stability of half-filled and completely filled orbitals.</td>
+</tr>
+<tr>
+    <th>Unit 4 Chemical Bonding and Molecular Structure</th>
+</tr>
+<tr>
+    <td>Kossel – Lewis approach to chemical bond formation, the concept of ionic and covalent bonds.
+Ionic Bonding: Formation of ionic bonds, factors affecting the formation of ionic bonds; calculation of lattice enthalpy.
+Covalent Bonding: Concept of electronegativity, Fajan’s rule, dipole moment; Valence Shell Electron Pair Repulsion (VSEPR) theory and shapes of simple molecules.
+Quantum mechanical approach to covalent bonding: Valence bond theory, Its important features, the concept of hybridization involving s, p, and d orbitals; Resonance.
+Molecular Orbital Theory: Its important features, LCAOs, types of molecular orbitals (bonding, antibonding), sigma and pi-bonds, molecular orbital electronic configurations of homonuclear diatomic molecules, the concept of bond order, bond length and bond energy.
+Elementary idea of metallic bonding, Hydrogen bonding, and its applications.</td>
+</tr>
+<tr>
+    <th>Unit 5 Chemical Thermodynamics</th>
+</tr>
+<tr>
+    <td>Fundamentals of thermodynamics: System and surroundings, extensive and intensive properties, state functions, types of processes.
+First law of thermodynamics: Concept of work, heat internal energy, and enthalpy, heat capacity, molar heat capacity
+Hess’s law of constant heat summation.
+Enthalpies of bond dissociation, combustion, formation, atomization, sublimation, phase transition, hydration, ionization, and solution.
+The second law of thermodynamics: Spontaneity of processes; Delta S of the universe and Delta G of the system as criteria for spontaneity, Delta Go (Standard Gibbs energy change) and equilibrium constant.</td>
+</tr>
+<tr>
+    <th>Unit 6 Solutions</th>
+</tr>
+<tr>
+    <td>Different methods for expressing the concentration of a solution: molality, molarity, mole fraction, percentage (by volume and mass both), the vapour pressure of solutions and Raoult’s Law.
+Ideal and non-ideal solutions, vapour pressure – composition, plots for ideal and non-ideal solutions.
+Colligative properties of dilute solutions, relative lowering of vapour pressure, depression of freezing point, elevation of boiling point and osmotic pressure.
+Determination of molecular mass using colligative properties.
+Abnormal value of molar mass, Hoff factor, and its significance.</td>
+</tr>
+<tr>
+    <th>Unit 7 Equilibrium</th>
+</tr>
+<tr>
+    <td>Meaning of equilibrium, the concept of dynamic equilibrium.
+Equilibria involving physical processes: Solid-liquid, liquid – gas and solid-gas equilibria, Henry’s law, a general characteristic of equilibrium involving physical processes.
+Equilibria involving chemical processes: Law of chemical equilibrium, equilibrium constants (Kp and Kc) and their significance, the significance of Delta G and Delta Go in chemical equilibria, factors affecting equilibrium concentration, pressure, temperature, the effect of the catalyst.
+Le Chatelier’s principle.
+Ionic equilibrium: Weak and strong electrolytes, ionization of electrolytes, various concepts of acids and bases (Arrhenius, Bronsted-Lowry and Lewis) and their ionization, acid-base equilibria (including multistage ionization) and ionization constants, ionization of water, pH scale, common ion effect, hydrolysis of salts and pH of their solutions, solubility of sparingly soluble salts and solubility products, buffer solutions.</td>
+</tr>
+<tr>
+    <th>Unit 8 Redox Reactions and Electrochemistry</th>
+</tr>
+<tr>
+    <td>Electronic concepts of oxidation and reduction, redox reactions, oxidation number, rules for assigning oxidation number, balancing of redox reactions.
+Electrolytic and metallic conduction, conductance in electrolytic solutions, specific and molar conductivities and their variation with concentration.
+Kohlrausch’s law and its applications.
+Electrochemical cells: Electrolytic and Galvanic cells, different types of electrodes, electrode potentials including standard electrode potential, half – cell and cell reactions, emf of a Galvanic cell and its measurement.
+Nernst equation and its applications; Relationship between cell potential and Gibbs’ energy change.
+Dry cell and lead accumulator, Fuel cells.
+Corrosion and its prevention.</td>
+</tr>
+<tr>
+    <th>Unit 9 Chemical Kinetics</th>
+</tr>
+<tr>
+    <td>The rate of a chemical reaction, factors affecting the rate of reactions: concentration, temperature, pressure, and catalyst.
+Elementary and complex reactions, order and molecularity of reactions, rate law, rate constant and its units, differential and integral forms of zero and first-order reactions, their characteristics and half-lives, the effect of temperature on the rate of reactions.
+Arrhenius theory, activation energy and its calculation, collision theory of bimolecular gaseous reactions (no derivation).</td>
+</tr>
+<tr>
+    <th>Unit 10 Surface Chemistry</th>
+</tr>
+<tr>
+<td>Adsorption: Physisorption and chemisorption and their characteristics, factors affecting the adsorption of gases on solids: Freundlich and Langmuir adsorption isotherms, adsorption from solutions.
+Catalysis: Homogeneous and heterogeneous, activity and selectivity of solid catalysts, enzyme catalysis, and its mechanism.
+Colloidal state: Distinction among true solutions, colloids, and suspensions, classification of colloids: lyophilic, lyophobic.
+Multimolecular, macromolecular and associated colloids (micelles), preparation and properties of colloids: Tyndall effect, Brownian movement, electrophoresis, dialysis, coagulation, and flocculation.
+Emulsions and their characteristics.</td>
+</tr>
+</table>
+<table>
+<h2>INORGANIC CHEMISTRY</h2>
+<tr>
+    <th>Unit 11 Classification of Elements and Periodicity in Properties</th>
+</tr>
+<tr>
+    <td>Modern periodic law and present form of the periodic table.
+s, p, d and f block elements.
+Periodic trends in properties of elements atomic and ionic radii, ionization enthalpy.
+Electron gain enthalpy, valence, oxidation states and chemical reactivity.</td>
+</tr>
+<tr>
+    <th>Unit 12 General Principles and Process of Isolation of Metals</th>
+</tr>
+<tr>
+    <td>Modes of occurrence of elements in nature, minerals, ores.
+Steps involved in the extraction of metals: concentration, reduction (chemical and electrolytic methods) and refining with special reference to the extraction of Al, Cu, Zn, and Fe.
+Thermodynamic and electrochemical principles involved in the extraction of metals.</td>
+</tr>
+<tr>
+    <th>Unit 13 Hydrogen</th>
+</tr>
+<tr>
+    <td>The position of hydrogen in periodic table, isotopes, preparation, properties, and uses of hydrogen.
+Physical and chemical properties of water and heavy water.
+Structure, preparation, reactions, and uses of hydrogen peroxide.
+Classification of hydrides: ionic, covalent and interstitial.
+Hydrogen as a fuel.</td>
+</tr>
+<tr>
+    <th>Unit 14 S Block Elements (Alkali and Alkaline Earth Metals)</th>
+</tr>
+<tr>
+    <td>Group 1 and Group 2 Elements: General introduction, electronic configuration and general trends in physical and chemical properties of elements, anomalous properties of the first element of each group, diagonal relationships.
+Preparation and properties of some important compounds: sodium carbonate, sodium chloride, sodium hydroxide and sodium hydrogen carbonate.
+Industrial uses of lime, limestone, Plaster of Paris and cement.
+The biological significance of Na, K, Mg and Ca.</td>
+</tr>
+<tr>
+    <th>Unit 15 P Block Elements</th>
+</tr>
+<tr>
+    <td>Group 13 to Group 18 Elements: General Introduction, Electronic configuration, and general trends in physical and chemical properties of elements across the periods and down the groups; unique behaviour of the first element in each group. Groupwise study of the p block elements.
+Group 13: Preparation, properties, and uses of boron and aluminium; Structure, properties and uses of borax, boric acid, diborane, boron trifluoride, aluminium chloride, and alums.
+Group 14: Tendency for catenation; Structure, properties, and uses of allotropes and oxides of carbon, silicon tetrachloride, silicates, zeolites, and silicones.
+Group 15: Properties and uses of nitrogen and phosphorus; Allotropic forms of phosphorus; Preparation, properties, structure, and uses of ammonia, nitric acid, phosphine and phosphorus halides, (PCl3, PCl5); Structures of oxides and oxoacids of nitrogen and phosphorus.
+Group 16: Preparation, properties, structures and uses of dioxygen and ozone; Allotropic forms of sulfur; Preparation, properties, structures, and uses of sulfur dioxide, sulphuric acid (including its industrial preparation); Structures of oxoacids of sulfur.
+Group 17: Preparation, properties, and uses of chlorine and hydrochloric acid; Trends in the acidic nature of hydrogen halides; Structures of Interhalogen compounds and oxides and oxyacids of halogens.
+Group 18: Occurrence and uses of noble gases; Structures of fluorides and oxides of xenon.</td>
+</tr>
+<tr>
+    <th>Unit 16 D and F Block Elements</th>
+</tr>
+<tr>
+    <td>Transition Elements: General introduction, electronic configuration, occurrence and characteristics, general trends in properties of the first-row transition elements: physical properties, ionization enthalpy, oxidation states, atomic radii, colour, catalytic behaviour, magnetic properties, complex formation, interstitial compounds, alloy formation.
+Preparation, properties, and uses of K2Cr2O7 and KMnO4.
+Inner Transition Elements: Lanthanides, Electronic configuration, oxidation states, chemical reactivity and lanthanoid contraction, and Actinoids: Electronic configuration and oxidation states.</td>
+</tr>
+<tr>
+    <th>Unit 17 Coordination Compounds</th>
+</tr>
+<tr>
+    <td>Introduction to coordination compounds, Werner’s theory.
+ligands, coordination number, denticity, chelation.
+IUPAC nomenclature of mononuclear coordination compounds, isomerism.
+Bonding-Valence bond approach and basic ideas of Crystal field theory, colour and magnetic properties.
+Importance of coordination compounds (in qualitative analysis, extraction of metals and in biological systems).</td>
+</tr>
+<tr>
+    <th>Unit 18 Environmental Chemistry</th>
+</tr>
+<tr>
+    <td>Environmental pollution: Atmospheric, water, and soil.
+Atmospheric pollution: Tropospheric and stratospheric.
+Gaseous pollutants: Oxides of carbon, nitrogen, and sulfur, hydrocarbons; their sources, harmful effects, and prevention.
+Greenhouse effect and Global warming, acid rain.
+Particulate pollutants: Smoke, dust, smog, fumes, mist; their sources, harmful effects, and prevention.
+Stratospheric pollution: Formation and breakdown of ozone, depletion of ozone layer its mechanism and effects.
+Water Pollution: Major pollutants such as pathogens, organic wastes, and chemical pollutants; their harmful effects and prevention.
+Soil pollution: Major pollutants such as Pesticides (insecticides, herbicides and fungicides) their harmful effects and prevention.
+Strategies to control environmental pollution.</td>
+</tr>
+</table>
+<table>
+    <h2>ORGANIC CHEMISTRY</h2>
+    <tr>
+        <th>Unit 19 Purification and Characterisation of Organic Compounds</th>
+    </tr>
+    <tr>
+        <td>Purification: Crystallization, sublimation, distillation, differential extraction, and chromatography principles and their applications.
+Qualitative analysis: Detection of nitrogen, sulfur, phosphorus, and halogens.
+Quantitative analysis (basic principles only): Estimation of carbon, hydrogen, nitrogen, halogens, sulfur, phosphorus.
+Calculations of empirical formula and molecular formulae; Numerical problems in organic quantitative analysis.</td>
+    </tr>
+    <tr>
+        <th>Unit 20 Some Basic Principles of Organic Chemistry</th>
+    </tr>
+    <tr>
+        <td>Tetravalency of carbon; Shapes of simple molecules – hybridization (s and p).
+Classification of organic compounds based on functional groups: -C = C- and those containing halogens, oxygen, nitrogen, and sulfur; Homologous series.
+Isomerism: structural and stereoisomerism.
+Nomenclature (Trivial and IUPAC): Covalent bond fission Homolytic and heterolytic: free radicals, carbocations, and carbanions; stability of carbocations and free radicals, electrophiles and nucleophiles.
+Electronic displacement in a covalent bond: Inductive effect, electromeric effect, resonance, and hyperconjugation.
+Common types of organic reactions: Substitution, addition, elimination, and rearrangement.</td>
+    </tr>
+    <tr>
+        <th>Unit 21 Hydrocarbons</th>
+    </tr>
+    <tr>
+        <td>Classification, isomerism, IUPAC nomenclature, general methods of preparation, properties and reactions.
+Alkanes: Conformations; Sawhorse and Newman projections (of ethane); Mechanism of halogenation of alkanes.
+Alkenes: Geometrical isomerism.
+Mechanism of electrophilic addition: addition of hydrogen, halogens, water, hydrogen halides (Markownikoff’s and peroxide effect); Ozonolysis, oxidation, and polymerization.
+Alkynes: Acidic character; Addition of hydrogen, halogens, water and hydrogen halides; Polymerization.
+Aromatic hydrocarbons: Nomenclature, benzene structure and aromaticity.
+Mechanism of electrophilic substitution: halogenation, nitration, Friedel Crafts alkylation and acylation, directive influence of the functional group in monosubstituted benzene.</td>
+    </tr>
+    <tr>
+        <th>Unit 22 Organic Compounds Containing Halogens</th>
+    </tr>
+    <tr>
+        <td>General methods of preparation, properties, and reactions.
+Nature of C-X bond.
+Mechanisms of substitution reactions.
+Uses, Environmental effects of chloroform, iodoform, freons, and DDT.</td>
+    </tr>
+    <tr>
+        <th>Unit 23 Organic Compounds Containing Oxygen</th>
+    </tr>
+    <tr>
+        <td>General methods of preparation, properties, reactions, and uses.
+Alcohols: Identification of primary, secondary and tertiary alcohols; mechanism of dehydration.
+Phenols: Acidic nature, electrophilic substitution reactions: halogenation, nitration, and sulphonation, Reimer Tiemann reaction.
+Ethers: Structure.
+Aldehyde and Ketones: Nature of carbonyl group; Nucleophilic addition to >C=O group, relative reactivities of aldehydes and ketones.
+Important reactions such as Nucleophilic addition reactions (addition of HCN, NH3 and its derivatives), Grignard reagent; oxidation; reduction (Wolff Kishner and Clemmensen); the acidity of hydrogen, aldol condensation, Cannizzaro reaction, Haloform reaction.
+Chemical tests to distinguish between aldehydes and Ketones.
+Carboxylic Acids: Acidic strength and factors affecting it.</td>
+    </tr>
+    <tr>
+        <th>Unit 24 Organic Compounds Containing Nitrogen</th>
+    </tr>
+    <tr>
+        <td>General methods of preparation, properties, reactions, and uses.
+Amines: Nomenclature, classification, structure, basic character and identification of primary, secondary and tertiary amines and their basic character.
+Diazonium Salts: Importance in synthetic organic chemistry.</td>
+    </tr>
+    <tr>
+        <th>Unit 25 Polymers</th>
+    
+    </tr>
+    <tr>
+        <td>General introduction and classification of polymers, general methods of polymerization addition and condensation, co-polymerization.
+Natural and synthetic rubber and vulcanization.
+Some important polymers with emphasis on their monomers and uses, polyethene, nylon, polyester, and bakelite.</td>
+    </tr>
+    <tr>
+        <th>Unit 26 Biomolecules</th>
+    </tr>
+    <tr>
+        <td>General introduction and importance of biomolecules.
+Carbohydrates: Classification: aldoses and ketoses; monosaccharides (glucose and fructose), constituent monosaccharides or oligosaccharides (sucrose, lactose, maltose) and polysaccharides (starch, cellulose, glycogen).
+Proteins: Elementary Idea of amino acids, peptide bond, polypeptides; Proteins: primary, secondary, tertiary and quaternary structure (qualitative idea only), denaturation of proteins, enzymes.
+Vitamins: Classification and functions.
+B Chemical constitution of DNA and RNA. Biological functions of nucleic acids</td>
+    </tr>
+<tr>
+    <th>Unit 27 Chemistry in Everyday Life</th>
+</tr>
+<tr>
+    <td>Chemicals in medicines: Analgesics, tranquilizers, antiseptics, disinfectants, antimicrobials, antifertility drugs, antibiotics, antacids, antihistamines their meaning and common examples.
+Chemicals in food: Preservatives, artificial sweetening agents common examples.
+Cleansing agents: Soaps and detergents, cleansing action.</td>
+</tr>
+<tr>
+    <th>Unit 28 Principles Related to Practical Chemistry</th>
+</tr>
+<tr>
+    <td>Detection of extra elements (N, S, halogens) in organic compounds.
+Detection of the following functional groups: hydroxyl (alcoholic and phenolic), carbonyl (aldehyde and ketone), carboxyl and amino groups in organic compounds.
+The chemistry involved in the preparation of the following: Inorganic compounds: Mohr’s salt, potash alum, and Organic compounds: Acetanilide, p-nitro acetanilide, aniline yellow, iodoform.
+The chemistry involved in the titrimetric exercises: Acids bases and the use of indicators, oxalic-acid vs KMnO4, Mohr’s salt vs KMnO4.
+Chemical principles involved in the qualitative salt analysis: Cations: Pb2+, Cu2+, AI3+, Fe3+, Zn2+, Ni2+, Ca2+, Ba2+, Mg2+, NH4+, and Anions: CO32-, S2-, SO42-, NO2-, NO3-, CI-, Br, I. (Insoluble salts excluded).
+Chemical principles involved in the following experiments: Enthalpy of solution of CuSO4, Enthalpy of neutralization of strong acid and strong base, Preparation of lyophilic and lyophobic sols, and Kinetic study of the reaction of iodide ion with hydrogen peroxide at room temperature.</td>
+</tr>
+</table>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 

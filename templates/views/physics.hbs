@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+{{>navbar}}
+<div class="sidenav">
+  <a href="/">Home</a>
+
+  <button class="dropdown-btn">Mechanics 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Thermodynamics 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Waves and Oscillations
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Electrostatics 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Electrodynamics
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Magnetism
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Modern Physics
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  
+</div>
+
+<div class="main">
+  <h2>PHYSICS SYLLABUS</h2>
+
+<table>
+  <tr>
+    <th>Unit 1: Physics and Measurement</th>
+    </tr>
+  <tr>
+    <td>Physics, technology and society, S  I Units, fundamental and derived units, least count, accuracy and precision of measuring instruments, Errors in measurement, Dimensions of Physics quantities, dimensional analysis and its applications.</td>
+     </tr>
+     <tr>
+    <th>Unit 2: Kinematics</th>
+    </tr>
+  <tr>
+    <td>The frame of reference, motion in a straight line,  Position-  time graph,  speed and velocity; Uniform and non-uniform motion, average speed and instantaneous velocity, uniformly accelerated motion, velocity-time, position-time graph, relations for uniformly accelerated motion, Scalars and Vectors, Vector. Addition and subtraction, zero vector,  scalar and vector products,  Unit  Vector,  Resolution of a Vector.  Relative Velocity, Motion in a plane, Projectile Motion, Uniform Circular Motion.</td>
+     </tr>
+     <tr>
+       <th>Unit 3: Laws of Motion</th>
+    </tr>
+    <tr>
+      <td>Force and inertia, Newton’s First law of motion; Momentum, Newton’s Second Law of motion, Impulses; Newton’s Third Law of motion. Law of conservation of linear momentum and its applications. Equilibrium of concurrent forces. Static and Kinetic friction, laws of friction, rolling friction. Dynamics of uniform circular motion: centripetal force and its applications.</td>
+    </tr>
+    <tr>
+      <th>Unit 4: Work, Energy and Power</th>
+    </tr>
+  <tr>
+    <td>Work done by a content force and a variable force; kinetic and potential energies, work-energy theorem, power.
+The potential energy of spring conservation of mechanical energy, conservative and neoconservative forces; Elastic and inelastic collisions in one and two dimensions.</td>
+  </tr>
+  <tr>
+    <th>Unit 5: Rotational Motion</th>
+  </tr>
+  <tr>
+    <td>Centre of the mass of a two-particle system, Centre of the mass of a rigid body; Basic concepts of rotational motion; a moment of a force; torque, angular momentum, conservation of angular momentum and its applications; the moment of inertia, the radius of gyration.
+Values of moments of inertia for simple geometrical objects, parallel and perpendicular axes theorems and their applications. Rigid body rotation equations of rotational motion.</td>
+  </tr>
+  <tr>
+    <th>Unit 6: Gravitation</th>
+  </tr>
+  <tr>
+    <td>The universal law of gravitation. Acceleration due to gravity and its variation with altitude and depth. Kepler’s law of planetary motion. Gravitational potential energy; gravitational potential. Escape velocity, Orbital velocity of a satellite. Geo stationary satellites.</td>
+  </tr>
+  <tr>
+    <th>Unit 7: Properties of Solids and Liquids</th>
+  </tr>
+  <tr>
+    <td>Elastic behaviour, Stress-strain relationship, Hooke’s Law. Young’s modulus, bulk modulus, modulus of rigidity. Pressure due to a fluid column; Pascal’s law and its applications. Viscosity. Stokes’ law. terminal velocity, streamline and turbulent flow. Reynolds number. Bernoulli’s principle and its applications. Surface energy and surface tension, angle of contact, application of surface tension – drops, bubbles and capillary rise. Heat, temperature, thermal expansion; specific heat capacity, calorimetry; change of state, latent heat. Heat transfer-conduction, convection and radiation. Newton’s law of cooling.</td>
+  </tr>
+  <tr>
+    <th>Unit 8: Thermodynamics</th>
+  </tr>
+  <tr>
+    <td>Thermal equilibrium, zeroth law of thermodynamics, the concept of temperature. Heat, work and internal energy. The first law of thermodynamics. The second law of thermodynamics: reversible and irreversible processes. Carnot engine and its efficiency.</td>
+  </tr>
+  <tr>
+    <th>Unit 9: Kinetic Theory of Gases</th>
+  </tr>
+  <tr>
+    <td>Equation of state of a perfect gas, work done on compressing a gas, Kinetic theory of gases – assumptions, the concept of pressure. Kinetic energy and temperature: RMS speed of gas molecules: Degrees of freedom. Law of equipartition of energy, applications to specific heat capacities of gases; Mean free path. Avogadro’s number.</td>
+  </tr>
+  <tr>
+    <th>Unit 10: Oscillations and Waves</th>
+</tr>
+  <tr>
+    <td>Periodic motion – period, frequency, displacement as a function of time. Periodic functions. Simple harmonic motion (S.H.M.) and its equation; phase: oscillations of a spring -restoring force and force constant: energy in S.H.M. – Kinetic and potential energies; Simple pendulum – derivation of expression for its time period: Free, forced and damped oscillations, resonance.
+Wave motion. Longitudinal and transverse waves, speed of a wave. Displacement relation for a progressive wave. Principle of superposition of waves, a reflection of waves. Standing waves in strings and organ pipes, fundamental mode and harmonics. Beats. Doppler Effect in sound</td>
+  </tr>
+  <tr>
+    <th>Unit 11: Electrostatics</th>
+  </tr>
+  <tr>
+    <td>Electric charges: Conservation of charge. Coulomb’s law-forces between two point charges, forces between multiple charges: superposition principle and continuous charge distribution.
+Electric field: Electric field due to a point charge, Electric field lines. Electric dipole, Electric field due to a dipole. Torque on a dipole in a uniform electric field.
+
+Electric flux. Gauss’s law and its applications to find field due to infinitely long uniformly charged straight wire, uniformly charged infinite plane sheet and uniformly charged thin spherical shell. Electric potential and its calculation for a point charge, electric dipole and system of charges; Equipotential surfaces, Electrical potential energy of a system of two point charges in an electrostatic field.
+
+Conductors and insulators. Dielectrics and electric polarization, capacitor, the combination of capacitors in series and parallel, capacitance of a parallel plate capacitor with and without dielectric medium between the plates. Energy stored in a capacitor.</td>
+  </tr>
+  <tr>
+    <th>Unit 12: Current Electricity</th>
+  </tr>
+  <tr>
+    <td>Electric current. Drift velocity. Ohm’s law. Electrical resistance. Resistances of different materials. V-l characteristics of Ohmic and non-ohmic conductors. Electrical energy and power. Electrical resistivity. Colour code for resistors; Series and parallel combinations of resistors; Temperature dependence of resistance.
+Electric Cell and its Internal resistance, potential difference and emf of a cell, a combination of cells in series and parallel. Kirchhoff’s laws and their applications. Wheatstone bridge. Metre Bridge. Potentiometer – principle and its applications.</td>
+  </tr>
+  <tr>
+    <th>Unit 13: Magnetic Effects of Current and Magnetism</th>
+  </tr>
+  <tr>
+    <td>Biot – Savart law and its application to current carrying circular loop. Ampere’s law and its applications to infinitely long current carrying straight wire and solenoid. Force on a moving charge in uniform magnetic and electric fields. Cyclotron.
+Force on a current-carrying conductor in a uniform magnetic field. The force between two parallel current carrying conductors- definition of ampere. Torque experienced by a current loop in a uniform magnetic field: Moving coil galvanometer, its current sensitivity and conversion to ammeter and voltmeter.
+
+Current loop as a magnetic dipole and its magnetic dipole moment. Bar magnet as an equivalent solenoid, magnetic field lines; Earth’s magnetic field and magnetic elements. Para-, dia- and ferromagnetic substances. Magnetic susceptibility and permeability. Hysteresis. Electromagnets and permanent magnets.</td>
+  </tr>
+  <tr>
+    <th>Unit 14: Electromagnetic Induction and Alternating Currents</th>
+  </tr>
+  <tr>
+    <td>Electromagnetic induction: Faraday’s law. Induced emf and current: Lenz’s Law, Eddy currents. Self and mutual inductance. Alternating currents, peak and RMS value of alternating current/ voltage: reactance and impedance: LCR series circuit, resonance: Quality factor, power in AC circuits, wattless current. AC generator and transformer.</td>
+  </tr>
+  <tr>
+    <th>Unit 15: Electromagnetic Waves</th>
+  </tr>
+  <tr>
+    <td>Electromagnetic waves and their characteristics, Transverse nature of electromagnetic waves, Electromagnetic spectrum (radio waves, microwaves, infrared, visible, ultraviolet. X-rays. Gamma rays), Applications of e.m. waves.</td>
+  </tr>
+  <tr>
+    <th>Unit 16: Optics</th>
+  </tr>
+  <tr>
+    <td>Reflection and refraction of light at plane and spherical surfaces, mirror formula. Total internal reflection and its applications. Deviation and Dispersion of light by a; prism; Lens Formula. Magnification. Power of a Lens. Combination of thin lenses in contact. Microscope and Astronomical Telescope (reflecting and refracting ) and their magnifying powers.
+Wave optics: wavefront and Huygens’ principle. Laws of reflection and refraction using Huygens principle. Interference, Young’s double-slit experiment and expression for fringe width, coherent sources and sustained interference of light. Diffraction due to a single slit, width of central maximum. Resolving power of microscopes and astronomical telescopes. Polarization, plane-polarized light: Brewster’s law, uses of plane-polarized light and Polaroid.</td>
+  </tr>
+  <tr>
+    <th>Unit 17: Dual Nature of Matter and Radiation</th>
+
+  </tr>
+  <tr>
+    <td>Dual nature of radiation. Photoelectric effect. Hertz and Lenard’s observations; Einstein’s photoelectric equation: particle nature of light. Matter waves-wave nature of particle, de Broglie relation. Davisson- Germer experiment.</td>
+  </tr>
+  <tr>
+    <th>Unit 18: Atoms and Nuclei</th>
+  </tr>
+  <tr>
+    <td>Alpha-particle scattering experiment; Rutherford’s model of atom; Bohr model, energy levels, hydrogen spectrum. Composition and size of nucleus, atomic masses, isotopes, isobars: isotones. Radioactivity- alpha. beta and gamma particles/rays and their properties; radioactive decay law. Mass-energy relation, mass defect; binding energy per nucleon and its variation with mass number, nuclear fission and fusion.</td>
+  </tr>
+  <tr>
+    <th>Unit 19: Electronic Devices</th>
+  </tr>
+  <tr>
+    <td>Semiconductors; semiconductor diode: 1- V characteristics in forward and reverse bias; diode as a rectifier; I-V characteristics of LED. the photodiode, solar cell and Zener diode; Zener diode as a voltage regulator. Junction transistor, transistor action, characteristics of a transistor: transistor as an amplifier (common emitter configuration) and oscillator. Logic gates (OR. AND. NOT. NAND and NOR). Transistor as a switch.</td>
+  </tr>
+  <tr>
+    <th>Unit 20: Communication Systems</th>
+  </tr>
+  <tr>
+    <td>Propagation of electromagnetic waves in the atmosphere; Sky and space wave propagation. Need for modulation. Amplitude and Frequency Modulation, Bandwidth of signals. the bandwidth of Transmission medium, Basic Elements of a Communication System (Block Diagram only).</td>
+  </tr>
+</table>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 

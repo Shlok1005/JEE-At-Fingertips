@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Mathematics</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+{{>navbar}}
+<div class="sidenav">
+  <a href="/">Home</a>
+
+  <button class="dropdown-btn">Algebra 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Trignometry
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Cordinate Geomectry
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Calculus
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Vector and 3D Geomectry
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <button class="dropdown-btn">Misclaneous
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+
+<div class="main">
+  <h2>MATHS SYLLABUS</h2>
+
+<table>
+  <tr>
+    <th>Unit 1: Sets, Relations, and Functions</th>
+  </tr>
+  <tr>
+    <td>Sets and their representation.
+Union, intersection, and complement of sets and their algebraic properties.
+Powerset.
+Relation, Types of relations, equivalence relations.
+Functions; one-one, into and onto functions, the composition of functions.</td>
+  </tr>
+  <tr>
+    <th>Unit 2: Complex Numbers and Quadratic Equations</th>
+  </tr>
+  <tr>
+    <td>Complex numbers as ordered pairs of reals.
+Representation of complex numbers in the form (a+ib) and their representation in a plane, Argand diagram.
+Algebra of complex numbers, modulus and argument (or amplitude) of a complex number, square root of a complex number.
+Triangle inequality.
+Quadratic equations in real and complex number system and their solutions.
+The relation between roots and coefficients, nature of roots, the formation of quadratic equations with given roots.</td>
+  </tr>
+  <tr>
+    <th>Unit 3: Matrices and Determinants</th>
+  </tr>
+  <tr>
+    <td>Matrices: Algebra of matrices, types of matrices, and matrices of order two and three.
+Determinants: Properties of determinants, evaluation of determinants, the area of triangles using determinants.
+Adjoint and evaluation of inverse of a square matrix using determinants and elementary transformations.
+Test of consistency and solution of simultaneous linear equations in two or three variables using determinants and matrices.</td>
+  </tr>
+  <tr>
+    <th>Unit 4: Permutations and Combinations</th>
+  </tr>
+  <tr>
+    <td>The fundamental principle of counting.
+Permutation as an arrangement and combination as a selection.
+The meaning of P (n,r) and C (n,r). Simple applications.</td>
+  </tr>
+  <tr>
+    <th>Unit 5: Mathematical Induction</th>
+  </tr>
+  <tr>
+    <td>The principle of Mathematical Induction and its simple applications.</td>
+  </tr>
+  <tr>
+    <th>Unit 7: Sequence and Series</th>
+  </tr>
+  <tr>
+    <td>Arithmetic and Geometric progressions, insertion of arithmetic.
+Geometric means between two given numbers.
+The relation between A.M. and G.M.
+Sum up to n terms of special series: Sn, Sn2, Sn3.
+Arithmetic Geometric progression.</td>
+  </tr>
+<tr>
+  <th>Unit 8: Limit, Continuity and Differentiability</th>
+</tr>
+<tr>
+  <td>Real-valued functions, algebra of functions, polynomials, rational, trigonometric, logarithmic and exponential functions, inverse functions.
+Graphs of simple functions.
+Limits, continuity, and differentiability.
+Differentiation of the sum, difference, product, and quotient of two functions.
+Differentiation of trigonometric, inverse trigonometric, logarithmic, exponential, composite and implicit functions; derivatives of order up to two.
+Rolle’s and Lagrange’s Mean Value Theorems.
+Applications of derivatives: Rate of change of quantities, monotonic increasing and decreasing functions, Maxima, and minima of functions of one variable, tangents, and normals.</td>
+</tr>
+<tr>
+  <th>Unit 9: Integral Calculus</th>
+</tr>
+<tr>
+  <td>Integral as an antiderivative.
+Fundamental integrals involving algebraic, trigonometric, exponential and logarithmic functions.
+Integration by substitution, by parts, and by partial fractions.
+Integration using trigonometric identities.
+Integral as limit of a sum.
+Evaluation of simple integrals:</td>
+</tr>
+<tr>
+  <th>Unit 10: Differential Equations</th>
+</tr>
+<tr>
+  <td>Ordinary differential equations, their order, and degree.
+Formation of differential equations.
+The solution of differential equations by the method of separation of variables.
+The solution of homogeneous and linear differential equations of the type:</td>
+</tr>
+<tr>
+  <td>Unit 11: Coordinate Geometry</td>
+</tr>
+<tr>
+  <td>Cartesian system of rectangular coordinates in a plane, distance formula, section formula, locus and its equation, translation of axes, the slope of a line, parallel and perpendicular lines, intercepts of a line on the coordinate axes.
+Straight lines: Various forms of equations of a line, intersection of lines, angles between two lines, conditions for concurrence of three lines.
+Distance of a point from a line, equations of internal and external bisectors of angles between two lines, coordinates of the centroid, orthocentre, and circumcentre of a triangle, equation of the family of lines passing through the point of intersection of two lines.
+Circles, conic sections: Standard form of equation of a circle, general form of the equation of a circle, its radius and centre, equation of a circle when the endpoints of a diameter are given, points of intersection of a line and a circle with the centre at the origin and condition for a line to be tangent to a circle, equation of the tangent.
+Sections of cones, equations of conic sections (parabola, ellipse, and hyperbola) in standard forms, condition for y = mx + c to be a tangent and point (s) of tangency.</td>
+</tr>
+<tr>
+  <th>Unit 12: 3D Geometry</th>
+</tr>
+<tr>
+  <td>Coordinates of a point in space, the distance between two points.
+Section formula, direction ratios and direction cosines, the angle between two intersecting lines.
+Skew lines, the shortest distance between them and its equation.
+Equations of a line and a plane in different forms, the intersection of a line and a plane, coplanar lines.</td>
+</tr>
+<tr>
+  <th>Unit 13: Vector Algebra</th>
+</tr>
+<tr>
+  <td>Scalars and Vectors. Addition, subtraction, multiplication and division of vectors.
+Vector’s Components in 2D and 3D space.
+Scalar products and vector products, triple product.</td>
+</tr>
+<tr>
+  <th>Unit 14: Statistics and Probability</th>
+</tr>
+<tr>
+  <td>Measures of Dispersion: Calculation of mean, mode, median, variance, standard deviation, and mean deviation of ungrouped and grouped data.
+Probability: Probability of events, multiplication theorems, addition theorems, Baye’s theorem, Bernoulli trials, Binomial distribution and probability distribution.</td>
+</tr>
+<tr>
+  <th>Unit 15: Trigonometry</th>
+</tr>
+<tr>
+  <td>Identities of Trigonometry and Trigonometric equations.
+Functions of Trigonometry.
+Properties of Inverse trigonometric functions.
+Problems on Heights and Distances.</td>
+</tr>
+<tr>
+  <th>Unit 16v Mathematical Reasoning</th>
+</tr>
+<tr>
+  <td>Statements and logical operations: or, and, implied by, implies, only if and if.
+Understanding of contradiction, tautology, contrapositive and converse.</td>
+</tr>
+
+
+
+
+
+
+
+</table>
+</div>
+
+
+
+
+
+
+
+
+  <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+</body>
+</html> 
