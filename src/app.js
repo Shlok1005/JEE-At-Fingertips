@@ -65,6 +65,9 @@ app.get("/quest",(req,res)=>{
 app.get("/jeemain",auth,(req,res)=>{
     res.render("jeemain");
 })
+app.get("/jeeadvanced",auth,(req,res)=>{
+    res.render("jeeadvanced");
+})
 app.get("/logout",auth,async(req,res)=>{
     try {
 
